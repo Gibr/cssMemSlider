@@ -13,11 +13,14 @@
 }
 
 .slide-wrapper {
-  width: 100%;
+  width: 80%;
   height: 90%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 #slide-role {
+  position: relative;
   height: 100%;
   width:  400%;
   display: flex;
@@ -45,4 +48,16 @@
 
 .slide-4 {
   background-image: url("./img/4.jpg");
+}
+
+input[type="radio"]:checked#slide-2-trigger~div.slide-wrapper>div#slide-role {
+  left: -100%;
+}
+
+input[type="radio"]:checked#slide-3-trigger~div.slide-wrapper>div#slide-role {
+  left: -200%;
+}
+
+input[type="radio"]:checked#slide-4-trigger~div.slide-wrapper>div#slide-role {
+  left: -300%;
 }
